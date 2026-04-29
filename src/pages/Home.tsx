@@ -247,17 +247,18 @@ export default function Home() {
       </section>
 
       {/* FEATURED PROJECTS */}
+      <p className="text-xs text-gray-500 mb-2 md:hidden">Swipe to explore →</p>
       <section id="projects" className="section">
         <FadeIn>
           <h2 className="heading"> Featured Projects</h2>
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 gap-10 mt-12">
+        <div className="flex md:grid md:grid-cols-2 gap-4 md:gap-10 mt-12 overflow-x-auto md:overflow-visible pb-4 snap-x snap-mandatory">
           {projects.map((p) => (
             <FadeIn key={p.id}>
               <div
                 onClick={() => window.open(p.github, "_blank")}
-                className="group relative cursor-pointer border border-gray-800 rounded-xl overflow-hidden bg-white/5 backdrop-blur transition-all duration-300 hover:border-primary hover:shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:-translate-y-1"
+                className="group relative cursor-pointer min-w-[85%] md:min-w-0 border border-gray-800 rounded-xl overflow-hidden bg-white/5 backdrop-blur transition-all duration-300 hover:border-primary hover:shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:-translate-y-1"
               >
                 <div className="h-48 bg-gray-900 overflow-hidden relative">
                   {p.image ? (

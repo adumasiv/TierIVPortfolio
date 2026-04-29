@@ -70,3 +70,10 @@ html, body {
   25%, 75% { opacity: 0; }
 }
 
+.section {
+  @apply px-5 md:px-8 py-20 md:py-32 max-w-5xl mx-auto;
+}
+/* Hide scrollbar but keep functionality */
+::-webkit-scrollbar {
+  display: none;
+}
