@@ -22,7 +22,7 @@ export const projects = [
     title: "College Football Prediction Model",
     description:
       "Deep learning model using PyTorch to predict game outcomes with ~80% accuracy.",
-    tech: ["PyTorch", "NumPy", "Pandas", "Sklearn"],
+    tech: ["Python","PyTorch", "NumPy", "Pandas", "Sklearn","Matplotlib"],
     image: "/images/espn.webp",
     github: "https://github.com/adumasiv/CFB_FNN_MK1",
     demo: "/projects/football-ml",
@@ -40,7 +40,7 @@ export const projects = [
     title: "MLB Statistics Tool",
     description:
       "Custom algorithm for optimizing fantasy baseball drafting and player evaluation.",
-    tech: ["Python", "Data Analysis"],
+    tech: ["Java", "Data Analysis"],
     image: "/images/mlb1.jpg.webp",
     github: "https://github.com/adumasiv/MLB_Statistics_Helper_Tool",
     demo: "/projects/mlb-tool",
