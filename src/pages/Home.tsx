@@ -300,25 +300,27 @@ export default function Home() {
                       </a>
                     </div>
                   </div>
-                </div>
 
-                {/* CONTENT */}
-                <div className="p-4 md:p-6">
-                  <h3 className="text-lg md:text-xl font-semibold mb-2 group-hover:text-primary transition">
-                    {p.title}
-                  </h3>
+                  {/* CONTENT (now correctly inside card) */}
+                  <div className="p-4 md:p-6">
+                    <h3 className="text-lg md:text-xl font-semibold mb-2 group-hover:text-primary transition">
+                      {p.title}
+                    </h3>
 
-                  <p className="text-gray-400 text-sm mb-4">{p.description}</p>
+                    <p className="text-gray-400 text-sm mb-4">
+                      {p.description}
+                    </p>
 
-                  <div className="flex flex-wrap gap-2">
-                    {p.tech.map((t, i) => (
-                      <span
-                        key={i}
-                        className="text-xs px-2 py-1 border border-gray-700 rounded-md text-gray-400"
-                      >
-                        {t}
-                      </span>
-                    ))}
+                    <div className="flex flex-wrap gap-2">
+                      {p.tech.map((t, i) => (
+                        <span
+                          key={i}
+                          className="text-xs px-2 py-1 border border-gray-700 rounded-md text-gray-400"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </FadeIn>
