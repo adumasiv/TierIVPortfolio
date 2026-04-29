@@ -341,7 +341,7 @@ export default function Home() {
             <div className="p-6 border border-gray-800 rounded-2xl bg-white/5 backdrop-blur h-full flex flex-col gap-4">
               {/* LOGO PLACEHOLDER */}
               <img
-                src="/public/images/dte.png"
+                src="/public/images/DTE.png"
                 alt="DTE Energy"
                 className="w-16 h-16 object-contain"
               />
