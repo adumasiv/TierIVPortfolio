@@ -260,7 +260,7 @@ export default function Home() {
             <FadeIn key={p.id}>
               <div
                 onClick={() => window.open(p.github, "_blank")}
-                className="group relative cursor-pointer min-w-[92%] sm:min-w-[85%] md:min-w-0 border border-gray-800 rounded-xl overflow-hidden bg-white/5 backdrop-blur transition-all duration-300 hover:border-primary hover:shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:-translate-y-1"
+                className="group relative cursor-pointer min-w-[92%] sm:min-w-[85%] md:min-w-0 snap-start border border-gray-800 rounded-xl overflow-hidden bg-white/5 backdrop-blur transition-all duration-300 hover:border-primary hover:shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:-translate-y-1"
               >
                 <div className="h-48 bg-gray-900 overflow-hidden relative">
                   {p.image ? (
