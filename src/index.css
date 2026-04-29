@@ -1,4 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html { scroll-behavior: smooth; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-black text-white antialiased;
+}
+
+.section {
+  @apply px-8 py-28 max-w-6xl mx-auto;
+}
+
+.heading {
+  @apply text-4xl md:text-5xl font-bold tracking-tight;
+}
+
+.subtext {
+  @apply text-gray-400 max-w-2xl mt-4;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text;
+}
+
+.card-glow {
+  box-shadow: 0 0 30px rgba(108, 99, 255, 0.15);
+}
+
+.section {
+  @apply px-8 py-32 max-w-5xl mx-auto;
+}
+
+/* Gradient animated name */
+.gradient-name {
+  background: linear-gradient(270deg, #6C63FF, #00D1FF, #6C63FF);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Nav links */
+.nav-link {
+  @apply text-gray-400 hover:text-white transition;
+}
+
+html, body {
+  height: 100%;
+}
+
+.Typewriter__cursor {
+  display: inline-block;
+  margin-left: 2px;
+  color: white; /* or match your gradient */
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
