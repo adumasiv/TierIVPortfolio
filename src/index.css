@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+/* =========================
+   BASE
+========================= */
+html, body {
+  height: 100%;
   scroll-behavior: smooth;
 }
 
@@ -10,10 +14,16 @@ body {
   @apply bg-black text-white antialiased;
 }
 
+/* =========================
+   LAYOUT
+========================= */
 .section {
-  @apply px-8 py-28 max-w-6xl mx-auto;
+  @apply px-5 md:px-8 py-20 md:py-32 max-w-5xl mx-auto;
 }
 
+/* =========================
+   TYPOGRAPHY
+========================= */
 .heading {
   @apply text-4xl md:text-5xl font-bold tracking-tight;
 }
@@ -22,19 +32,12 @@ body {
   @apply text-gray-400 max-w-2xl mt-4;
 }
 
+/* Gradient text */
 .gradient-text {
   @apply bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text;
 }
 
-.card-glow {
-  box-shadow: 0 0 30px rgba(108, 99, 255, 0.15);
-}
-
-.section {
-  @apply px-8 py-32 max-w-5xl mx-auto;
-}
-
-/* Gradient animated name */
+/* Animated gradient name */
 .gradient-name {
   background: linear-gradient(270deg, #6C63FF, #00D1FF, #6C63FF);
   background-size: 600% 600%;
@@ -49,19 +52,27 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Nav links */
+/* =========================
+   COMPONENTS
+========================= */
+
+/* Cards */
+.card-glow {
+  box-shadow: 0 0 30px rgba(108, 99, 255, 0.15);
+}
+
+/* Navbar links */
 .nav-link {
-  @apply text-gray-400 hover:text-white transition;
+  @apply text-gray-400 hover:text-white transition cursor-pointer;
 }
 
-html, body {
-  height: 100%;
-}
-
+/* =========================
+   TYPEWRITER
+========================= */
 .Typewriter__cursor {
   display: inline-block;
   margin-left: 2px;
-  color: white; /* or match your gradient */
+  color: white;
   animation: blink 1s infinite;
 }
 
@@ -70,10 +81,31 @@ html, body {
   25%, 75% { opacity: 0; }
 }
 
-.section {
-  @apply px-5 md:px-8 py-20 md:py-32 max-w-5xl mx-auto;
+/* =========================
+   MOBILE PROJECT SCROLL FIX
+========================= */
+
+/* Allow horizontal scroll to feel full-width */
+.projects-scroll {
+  margin-left: -1.25rem;   /* cancels section padding */
+  margin-right: -1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
-/* Hide scrollbar but keep functionality */
+
+/* Restore normal layout on desktop */
+@media (min-width: 768px) {
+  .projects-scroll {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* =========================
+   SCROLLBAR (CLEAN UI)
+========================= */
 ::-webkit-scrollbar {
   display: none;
 }
