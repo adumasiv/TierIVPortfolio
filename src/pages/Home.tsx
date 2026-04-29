@@ -258,47 +258,47 @@ export default function Home() {
         </p>
 
         <div className="w-full">
-        <div className="flex md:grid md:grid-cols-2 gap-4 md:gap-10 mt-12 overflow-x-auto md:overflow-visible pb-4 snap-x snap-mandatory px-5 md:px-0">
-          {projects.map((p) => (
-            <FadeIn key={p.id}>
-              <div
-                onClick={() => window.open(p.github, "_blank")}
-                className="group relative cursor-pointer min-w-[95%] sm:min-w-[80%] md:min-w-0 snap-start border border-gray-800 rounded-xl overflow-hidden bg-white/5 backdrop-blur transition-all duration-300 hover:border-primary hover:shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:-translate-y-1"
-              >
-                {/* IMAGE */}
-                <div className="h-40 md:h-48 bg-gray-900 overflow-hidden relative">
-                  {p.image ? (
-                    <img
-                      src={p.image}
-                      alt={p.title}
-                      className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="flex items-center justify-center h-full text-gray-600 text-sm">
-                      Project Image
-                    </div>
-                  )}
+          <div className="flex md:grid md:grid-cols-2 gap-4 md:gap-10 mt-12 overflow-x-auto md:overflow-visible pb-4 snap-x snap-mandatory px-5 md:px-0">
+            {projects.map((p) => (
+              <FadeIn key={p.id}>
+                <div
+                  onClick={() => window.open(p.github, "_blank")}
+                  className="group relative cursor-pointer min-w-[95%] sm:min-w-[80%] md:min-w-0 snap-start border border-gray-800 rounded-xl overflow-hidden bg-white/5 backdrop-blur transition-all duration-300 hover:border-primary hover:shadow-[0_0_30px_rgba(99,102,241,0.4)] hover:-translate-y-1"
+                >
+                  {/* IMAGE */}
+                  <div className="h-40 md:h-48 bg-gray-900 overflow-hidden relative">
+                    {p.image ? (
+                      <img
+                        src={p.image}
+                        alt={p.title}
+                        className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="flex items-center justify-center h-full text-gray-600 text-sm">
+                        Project Image
+                      </div>
+                    )}
 
-                  {/* OVERLAY */}
-                  <div className="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                    <a
-                      href={p.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="flex items-center gap-2 px-4 py-2 border border-white rounded-lg text-sm font-medium hover:bg-white hover:text-black transition shadow-lg"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        className="w-4 h-4"
+                    {/* OVERLAY */}
+                    <div className="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                      <a
+                        href={p.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex items-center gap-2 px-4 py-2 border border-white rounded-lg text-sm font-medium hover:bg-white hover:text-black transition shadow-lg"
                       >
-                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.42-4.04-1.42-.54-1.38-1.32-1.75-1.32-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.84 1.24 1.84 1.24 1.06 1.82 2.78 1.3 3.46.99.1-.77.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.96 0-1.32.46-2.4 1.22-3.24-.12-.3-.53-1.52.12-3.16 0 0 1-.32 3.3 1.24a11.4 11.4 0 0 1 6 0C17 4.6 18 4.92 18 4.92c.65 1.64.24 2.86.12 3.16.76.84 1.22 1.92 1.22 3.24 0 4.64-2.8 5.66-5.48 5.96.44.38.82 1.12.82 2.26v3.36c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-                      </svg>
-                      Code
-                    </a>
-                  </div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          className="w-4 h-4"
+                        >
+                          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.42-4.04-1.42-.54-1.38-1.32-1.75-1.32-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.84 1.24 1.84 1.24 1.06 1.82 2.78 1.3 3.46.99.1-.77.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.96 0-1.32.46-2.4 1.22-3.24-.12-.3-.53-1.52.12-3.16 0 0 1-.32 3.3 1.24a11.4 11.4 0 0 1 6 0C17 4.6 18 4.92 18 4.92c.65 1.64.24 2.86.12 3.16.76.84 1.22 1.92 1.22 3.24 0 4.64-2.8 5.66-5.48 5.96.44.38.82 1.12.82 2.26v3.36c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                        Code
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -321,9 +321,9 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-              </div>
-            </FadeIn>
-          ))}
+              </FadeIn>
+            ))}
+          </div>
         </div>
 
         {/* CTA */}
