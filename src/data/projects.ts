@@ -59,7 +59,7 @@ export const projects = [
     description:
       "RESTful API with CLI integration for efficient data interaction and manipulation.",
     tech: ["Flask", "Python", "REST"],
-    image: "/public/images/flask.png",
+    image: "/images/flask.png",
     github: "https://github.com/adumasiv/API-Solution",
     demo: "/projects/flask-api",
     content: {
