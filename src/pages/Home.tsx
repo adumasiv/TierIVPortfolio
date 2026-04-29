@@ -255,7 +255,8 @@ export default function Home() {
         <p className="text-xs text-gray-500 mb-2 md:hidden">
           Swipe to explore →
         </p>
-        <div className="flex md:grid md:grid-cols-2 gap-4 md:gap-10 mt-12 overflow-x-auto md:overflow-visible pb-4 snap-x snap-mandatory -mx-8 px-8 pl-8 md:pl-0">
+        <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen px-5">
+            <div className="flex md:grid md:grid-cols-2 gap-4 md:gap-10 mt-12 overflow-x-auto md:overflow-visible pb-4 snap-x snap-mandatory">
           {projects.map((p) => (
             <FadeIn key={p.id}>
               <div
@@ -329,6 +330,7 @@ export default function Home() {
           >
             See the rest of my work
           </a>
+          </div>
         </div>
       </section>
 
