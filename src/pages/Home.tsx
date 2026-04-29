@@ -257,7 +257,8 @@ export default function Home() {
           Swipe to explore →
         </p>
 
-        <div className="projects-scroll flex md:grid md:grid-cols-2 gap-4 md:gap-10 mt-12 overflow-x-auto md:overflow-visible pb-4 snap-x snap-mandatory">
+        <div className="w-full">
+        <div className="flex md:grid md:grid-cols-2 gap-4 md:gap-10 mt-12 overflow-x-auto md:overflow-visible pb-4 snap-x snap-mandatory px-5 md:px-0">
           {projects.map((p) => (
             <FadeIn key={p.id}>
               <div
@@ -297,6 +298,7 @@ export default function Home() {
                       </svg>
                       Code
                     </a>
+                  </div>
                   </div>
                 </div>
 
