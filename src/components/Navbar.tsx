@@ -3,6 +3,18 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const yOffset = -80; // adjust if navbar overlaps
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <motion.nav

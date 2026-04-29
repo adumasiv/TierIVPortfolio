@@ -175,7 +175,7 @@ export default function Home() {
               {/* IMAGE PLACEHOLDER */}
               <div>
                 <img
-                  src="/public/images/HeadshotMK5.jpg"
+                  src="/images/HeadshotMK5.jpg"
                   alt="Avery Dumas"
                   className="w-48 h-48 object-cover rounded-xl mb-6 border border-gray-700 shadow-[0_0_25px_rgba(99,102,241,0.3)]"
                 />
@@ -341,7 +341,7 @@ export default function Home() {
             <div className="p-6 border border-gray-800 rounded-2xl bg-white/5 backdrop-blur h-full flex flex-col gap-4">
               {/* LOGO PLACEHOLDER */}
               <img
-                src="/public/images/DTE.png"
+                src="/images/DTE.png"
                 alt="DTE Energy"
                 className="w-16 h-16 object-contain"
               />
@@ -373,7 +373,7 @@ export default function Home() {
             <div className="p-6 border border-gray-800 rounded-2xl bg-white/5 backdrop-blur h-full flex flex-col gap-4">
               {/* LOGO PLACEHOLDER */}
               <img
-                src="/public/images/EMU.png"
+                src="/images/EMU.png"
                 alt="EMU"
                 className="w-16 h-16 object-contain"
               />
@@ -408,7 +408,7 @@ export default function Home() {
             <div className="p-6 border border-gray-800 rounded-2xl bg-white/5 backdrop-blur h-full flex flex-col gap-4 md:col-span-2">
               {/* LOGO PLACEHOLDER */}
               <img
-                src="/public/images/NGAT.png"
+                src="/images/NGAT.png"
                 alt="NGAT"
                 className="w-14 h-14 object-contain"
               />
