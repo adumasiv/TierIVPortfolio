@@ -175,7 +175,7 @@ export default function Home() {
               {/* IMAGE PLACEHOLDER */}
               <div>
                 <img
-                  src="/images/HeadshotMK5.jpg"
+                  src="/public/images/HeadshotMK5.jpg"
                   alt="Avery Dumas"
                   className="w-48 h-48 object-cover rounded-xl mb-6 border border-gray-700 shadow-[0_0_25px_rgba(99,102,241,0.3)]"
                 />
@@ -274,8 +274,6 @@ export default function Home() {
 
                   <div className="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
                     <div className="flex gap-4">
-                      
-
                       <a
                         href={p.github}
                         target="_blank"
@@ -321,7 +319,7 @@ export default function Home() {
         </div>
         <div className="mt-12 flex justify-center">
           <a
-            href="https://github.com/YOUR_GITHUB"
+            href="https://github.com/adumasiv"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-primary text-white rounded-lg font-medium hover:opacity-90 transition shadow-lg"
@@ -343,18 +341,14 @@ export default function Home() {
             <div className="p-6 border border-gray-800 rounded-2xl bg-white/5 backdrop-blur h-full flex flex-col gap-4">
               {/* LOGO PLACEHOLDER */}
               <img
-                src="/images/dte.png"
+                src="/public/images/dte.png"
                 alt="DTE Energy"
                 className="w-16 h-16 object-contain"
               />
 
               <div>
-                <h3 className="text-lg font-bold">
-                  Software Developer Co-op
-                </h3>
-                <h3 className="text-lg font-semibold">
-                  DTE Energy
-                </h3>
+                <h3 className="text-lg font-bold">Software Developer Co-op</h3>
+                <h3 className="text-lg font-semibold">DTE Energy</h3>
                 <p className="text-gray-500 text-sm mt-1">2023</p>
               </div>
 
@@ -379,16 +373,13 @@ export default function Home() {
             <div className="p-6 border border-gray-800 rounded-2xl bg-white/5 backdrop-blur h-full flex flex-col gap-4">
               {/* LOGO PLACEHOLDER */}
               <img
-                src="/images/EMU.png"
+                src="/public/images/EMU.png"
                 alt="EMU"
                 className="w-16 h-16 object-contain"
               />
 
-
               <div>
-                <h3 className="text-lg font-bold">
-                  Technology Manager
-                </h3>
+                <h3 className="text-lg font-bold">Technology Manager</h3>
                 <h3 className="text-lg font-semibold">
                   Eastern Michigan University
                 </h3>
@@ -417,14 +408,12 @@ export default function Home() {
             <div className="p-6 border border-gray-800 rounded-2xl bg-white/5 backdrop-blur h-full flex flex-col gap-4 md:col-span-2">
               {/* LOGO PLACEHOLDER */}
               <img
-                src="/images/NGAT.png"
+                src="/public/images/NGAT.png"
                 alt="NGAT"
                 className="w-14 h-14 object-contain"
               />
               <div>
-                <h3 className="text-lg font-bold">
-                  IT Technician
-                </h3>
+                <h3 className="text-lg font-bold">IT Technician</h3>
                 <h3 className="text-lg font-semibold">
                   New Grace Apostolic Temple
                 </h3>

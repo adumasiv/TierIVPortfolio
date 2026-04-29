@@ -5,7 +5,7 @@ export const projects = [
     description:
       "Full-stack platform that accelerated AI model training by 25% through efficient data labeling workflows.",
     tech: ["Python", "React", "PostgreSQL", "OAuth"],
-    image: "/images/deepgram1.png.webp",
+    image: "/public/images/deepgram1.png.webp",
     github: "https://github.com/adumasiv/Deepgram_AI_Tool",
     demo: "/projects/ai-labeling",
     content: {
@@ -23,7 +23,7 @@ export const projects = [
     description:
       "Deep learning model using PyTorch to predict game outcomes with ~80% accuracy.",
     tech: ["PyTorch", "NumPy", "Pandas", "Sklearn"],
-    image: "/images/espn.webp",
+    image: "/public/images/espn.webp",
     github: "https://github.com/adumasiv/CFB_FNN_MK1",
     demo: "/projects/football-ml",
     content: {
@@ -41,7 +41,7 @@ export const projects = [
     description:
       "Custom algorithm for optimizing fantasy baseball drafting and player evaluation.",
     tech: ["Python", "Data Analysis"],
-    image: "/images/mlb1.jpg.webp",
+    image: "/public/images/mlb1.jpg.webp",
     github: "https://github.com/adumasiv/MLB_Statistics_Helper_Tool",
     demo: "/projects/mlb-tool",
     content: {
@@ -59,7 +59,7 @@ export const projects = [
     description:
       "RESTful API with CLI integration for efficient data interaction and manipulation.",
     tech: ["Flask", "Python", "REST"],
-    image: "/images/flask.png",
+    image: "/public/images/flask.png",
     github: "https://github.com/adumasiv/API-Solution",
     demo: "/projects/flask-api",
     content: {
