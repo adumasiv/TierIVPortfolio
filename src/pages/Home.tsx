@@ -260,7 +260,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex md:grid md:grid-cols-2 gap-4 md:gap-10 mt-6 md:mt-12 overflow-x-auto md:overflow-visible pb-4 snap-x snap-mandatory px-5 md:px-8 md:max-w-5xl md:mx-auto">
+        <div className="flex md:grid md:grid-cols-2 gap-4 md:gap-10 mt-2 md:mt-4 overflow-x-auto md:overflow-visible pb-4 snap-x snap-mandatory px-5 md:px-8 md:max-w-5xl md:mx-auto">
           {projects.map((p) => (
             <FadeIn key={p.id}>
               <div
