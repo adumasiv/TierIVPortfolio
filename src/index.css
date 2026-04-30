@@ -18,7 +18,7 @@ body {
    LAYOUT
 ========================= */
 .section {
-  @apply px-5 md:px-8 py-20 md:py-32 max-w-5xl mx-auto;
+  @apply px-5 md:px-8 py-16 md:py-24 max-w-5xl mx-auto;
 }
 
 /* =========================
