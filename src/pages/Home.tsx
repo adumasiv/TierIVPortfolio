@@ -320,7 +320,7 @@ export default function Home() {
         </div>
 
         {/* CTA */}
-        <div className="section mt-12 flex justify-center">
+        <div className="mt-6 md:mt-8 flex justify-center">
           <a
             href="https://github.com/adumasiv"
             target="_blank"
