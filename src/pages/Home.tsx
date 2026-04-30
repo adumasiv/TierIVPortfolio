@@ -290,7 +290,17 @@ export default function Home() {
                       onClick={(e) => e.stopPropagation()}
                       className="flex items-center gap-2 px-4 py-2 border border-white rounded-lg text-sm font-medium hover:bg-white hover:text-black transition shadow-lg"
                     >
-                      Code
+                      {/* GitHub Icon */}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="w-4 h-4"
+                      >
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.02c-3.34.72-4.04-1.42-4.04-1.42-.54-1.38-1.32-1.75-1.32-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.84 1.24 1.84 1.24 1.06 1.82 2.78 1.3 3.46.99.1-.77.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.96 0-1.32.46-2.4 1.22-3.24-.12-.3-.53-1.52.12-3.16 0 0 1-.32 3.3 1.24a11.4 11.4 0 0 1 6 0C17 4.6 18 4.92 18 4.92c.65 1.64.24 2.86.12 3.16.76.84 1.22 1.92 1.22 3.24 0 4.64-2.8 5.66-5.48 5.96.44.38.82 1.12.82 2.26v3.36c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+                      </svg>
+
+                      <span>Code</span>
                     </a>
                   </div>
                 </div>
